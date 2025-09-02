@@ -1,0 +1,71 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+/* Pantalla inicial */
+#inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #d3aaff; /* morado claro */
+}
+
+#boton-inicio {
+    padding: 20px 40px;
+    font-size: 24px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #7b3fbf;
+    color: white;
+}
+
+/* Pantalla con contenido */
+#contenido.oculto {
+    display: none;
+}
+
+#contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #5a0d91; /* morado intenso */
+    position: relative;
+}
+
+#particulas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Para que no bloqueen clicks */
+    overflow: hidden;
+    z-index: 1;
+}
+
+#grafico {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    z-index: 2; /* Encima de partículas */
+}
+
+#dedicatoria {
+    width: 40%;
+    text-align: center;
+    color: yellow;
+    font-size: 28px;
+    z-index: 2; /* Encima de partículas */
+    position: relative;
+}
+
